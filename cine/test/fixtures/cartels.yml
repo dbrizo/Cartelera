@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  sala: 1
+  hora: 2015-06-16 22:47:36
+
+two:
+  nombre: MyString
+  sala: 1
+  hora: 2015-06-16 22:47:36

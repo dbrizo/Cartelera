@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1><font color = green >Lista de Estrenos</font></h1>
+<h2><font color = blue >Disfruta en familia de todos nuestros estrenos</font></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Sala</th>
+      <th>Hora</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cartels.each do |cartel| %>
+      <tr>
+        <td><%= cartel.nombre %></td>
+        <td><%= cartel.sala %></td>
+        <td><%= cartel.hora %></td>
+        <td><%= link_to 'Show', cartel %></td>
+        <td><%= link_to 'Edit', edit_cartel_path(cartel) %></td>
+        <td><%= link_to 'Destroy', cartel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cartel', new_cartel_path %>

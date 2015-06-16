@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @cartel.nombre %>
+</p>
+
+<p>
+  <strong>Sala:</strong>
+  <%= @cartel.sala %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @cartel.hora %>
+</p>
+
+<%= link_to 'Edit', edit_cartel_path(@cartel) %> |
+<%= link_to 'Back', cartels_path %>
